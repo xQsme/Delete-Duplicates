@@ -45,6 +45,7 @@ void MainWindow::on_pushButton_2_clicked()
                                       QMessageBox::Yes|QMessageBox::No);
         if (reply == QMessageBox::Yes) {
             deleteDir(dir);
+            QMessageBox::information(this, "Done", "All repeated files deleted.");
         }
     }
 }
